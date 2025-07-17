@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Cat++ Scratch Enhancements",
+  "version": "1.0",
+  "description": "Injects Cat++ scripts into Scratch projects pages.",
+  "permissions": [],
+  "host_permissions": [
+    "https://scratch.mit.edu/*",
+    "https://wiktorlaskowski.github.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://scratch.mit.edu/projects/*"],
+      "js": ["loader.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
