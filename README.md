@@ -1,6 +1,6 @@
-# Cat+
+# Cat++
 
-Userscripts that improve Scratch 3.
+Userscripts that improve Scratch 3. Based on Cat+ but now it's re-maintained and back up.
 
  * [Better Context Menus](https://github.com/forkphorus/cat-plus/raw/master/better-context-menus.user.js)
    * "Go To Definition" on procedure calls
