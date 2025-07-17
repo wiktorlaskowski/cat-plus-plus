@@ -32,4 +32,8 @@ Userscripts that improve Scratch 3. Based on Cat+ but now it's re-maintained and
 
 Install a userscript manager such as TamperMonkey or ViolentMonkey, then simply click on the links above and confirm the installation. Scripts should be automatically updated by default.
 
+### Chrome Extension
+
+Alternatively, you can use the lightweight Chrome extension included in this repository. Open `chrome-extension/` using Chrome's "Load unpacked" option and the extension will fetch the latest Cat++ scripts from `https://wiktorlaskowski.github.io/cat-plus-plus/` whenever you visit a Scratch project page.
+
 Scratch does not currently disallow userscripts or other similar modifications; they just disallow the sharing of them on the Scratch website.
