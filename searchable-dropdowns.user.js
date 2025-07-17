@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Searchable Dropdowns for Scratch 3
-// @version 0.1.2
+// @version 0.1.3
 // @namespace https://github.com/forkphorus/cat-plus
 // @match https://scratch.mit.edu/projects/*
 // @grant GM_addStyle
@@ -26,6 +26,7 @@ function addSearch() {
   el.addEventListener('input', search);
   el.classList.add('u-dropdown-searchbar');
   const container = getDropDownMenu();
+  if (!container) return;
   container.insertBefore(el, container.firstChild);
   el.focus();
 
@@ -43,17 +44,13 @@ function search(e) {
   }
 }
 
-let cachedDropDownContentElement = null;
 function getDropDownContentElement() {
-  if (cachedDropDownContentElement) {
-    return cachedDropDownContentElement;
-  }
-  cachedDropDownContentElement = document.querySelector('.blocklyDropDownContent');
-  return cachedDropDownContentElement;
+  return document.querySelector('.blocklyDropDownContent');
 }
 
 function getDropDownMenu() {
-  return getDropDownContentElement().querySelector('.blocklyDropdownMenu')
+  const el = getDropDownContentElement();
+  return el ? el.querySelector('.blocklyDropdownMenu') : null;
 }
 
 function getItems() {
