@@ -1,4 +1,6 @@
-# Cat+
+# Cat++
+
+Thanks for GarboMuffin for the original Cat+
 
 Userscripts that improve Scratch 3.
 
